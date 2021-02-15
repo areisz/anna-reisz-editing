@@ -1,0 +1,24 @@
+<header class="nav-header">
+  <nav>
+    <a href='{{site.url}}/index.html'>
+      <img alt="" src="{{site.url}}/assets/images/areisz-editing-logo.png" />
+    </a>
+    <div class='nav-menu-icon'>
+      <a href='#'>Menu</a>
+    </div>
+    <div class='nav-menu-items-container'>
+      <ul class="nav-menu-items-list">
+        {% for item in site.data.nav %}
+          {% if item.section_id == page.section_id %}
+            {% assign active_class = "active" %}
+          {% else %}
+            {% assign active_class = "" %}
+          {% endif %}
+          <li class="nav-menu-item {{active_class}}">
+            <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,48 @@
+# Site Settings
+title                   : Anna Reisz Editing
+email                   : your-email@domain.com
+description             : Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+baseurl                 : "" # the subpath of the site, e.g. /blog/
+# url                   : "http://yourdomain.com" # the base hostname & protocol for the site
+
+
+# Social Media
+twitter:
+  username              : AReiszEditing
+instagram:
+  username              : 
+facebook:
+  username              : 
+
+
+# Build Settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+whitelist:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Sass/SCSS Settings
+sass:
+  sass_dir              : _sass
+  # style               : compressed
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Blog Settings
+paginate: 5
+paginate_path: "blog/page:num"

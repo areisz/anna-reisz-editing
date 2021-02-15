@@ -1,0 +1,24 @@
+---
+layout: blog
+section_id: blog
+---
+
+
+<div class='blog-post-container'>
+  <div class='blog-post-header-image'>
+    <img alt="" src="{{ site.url }}/{{ page.image }}" />
+  </div>
+  <div class='blog-post-content'>
+    <p class='blog-post-info'>
+      <span>{{ page.date | date: "%B %d, %Y" }}</span>
+      {% if page.author %}
+        /
+        <span>by {{ page.author }}</span>
+      {% endif %}
+    </p>
+    <h3>{{ page.title }}</h3>
+
+    {{ content }}
+
+  </div>
+</div>
