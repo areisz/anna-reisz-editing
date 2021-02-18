@@ -46,6 +46,11 @@ footer {
                 line-height: 1.3em;
                 font-size: .9em;
             }
+
+            .footer-link:hover,
+            .footer-email:hover {
+                color: $white;
+            }
         }
 
         .logo-image-link {
@@ -67,6 +72,10 @@ footer {
             i {
                 font-size: 2rem;
                 margin-right: 1rem;
+
+                &:hover {
+                    color: $light-green;
+                }
             }
         }
     }
