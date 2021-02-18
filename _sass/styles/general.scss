@@ -1,0 +1,23 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    background-color: $white;
+    overflow-x: hidden;
+}
+
+#main {
+    min-height: 50vh;
+    width: 100%;
+    max-width: $max-width;
+    margin: 1rem auto;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+
+

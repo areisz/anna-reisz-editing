@@ -1,15 +1,20 @@
 - name:       Home
   path:       index.html
   section_id: home
+  label:      Home
 - name:       About
   path:       about.html
   section_id: about
+  label:      About Anna
 - name:       Services
   path:       services.html
   section_id: services
+  label:      My Services
 - name:       Blog
-  path:       blog/
+  path:       blog
   section_id: blog
+  label:      My Blog
 - name:       Contact
   path:       contact.html
   section_id: contact
+  label:      Contact Me

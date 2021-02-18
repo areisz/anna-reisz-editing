@@ -1,6 +1,6 @@
 # Site Settings
 title                   : Anna Reisz Editing
-email                   : your-email@domain.com
+email                   : AnnaReiszEditing@gmail.com
 description             : Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 baseurl                 : "" # the subpath of the site, e.g. /blog/
 # url                   : "http://yourdomain.com" # the base hostname & protocol for the site
@@ -44,5 +44,5 @@ compress_html:
     envs: development
 
 # Blog Settings
-paginate: 5
+paginate: 3
 paginate_path: "blog/page:num"

@@ -4,8 +4,10 @@
 /* Mixins */
 @import 'components/mixins';
 
-/* CSS Reset */
-
 /* Main styling */
+@import 'styles/fonts';
 
 /* Component Styling */
+@import 'styles/general';
+@import 'styles/header';
+@import 'styles/footer';
