@@ -2,9 +2,9 @@
 layout: default
 ---
 
-{% include section-header.html title="Anna Reisz Editing Blog" tagline="Know what we are thinking and doing" image="section-header-background.png" %}
+{% include section-header.html title="Editing Blog" image="hero-image.jpg" %}
 
-<div class='blog-page-container'>
+<div class='main-content'>
   <div class='blog-posts'>
 
     {{ content }}
@@ -18,7 +18,7 @@ layout: default
             <a href="/blog/page{{ paginator.next_page }}" class="older">Older Posts</a>
           {% endif %}
         {% else %}
-          <span class="older">Older Entries</span>
+          <span class="older disabled">Older Entries</span>
         {% endif %}
         {% if paginator.previous_page %}
           {% if paginator.previous_page == 1 %}
@@ -27,13 +27,10 @@ layout: default
             <a href="/blog/page{{ paginator.previous_page }}" class="newer">Newer Posts</a>
           {% endif %}
         {% else %}
-          <span class="newer">Newer Entries</span>
+          <span class="newer disabled">Newer Entries</span>
         {% endif %}
       </div>
     {% endif %}
   
   </div>
-
-  {% include sidebar.html %}
-
 </div>

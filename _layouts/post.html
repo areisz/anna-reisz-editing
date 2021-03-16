@@ -4,10 +4,8 @@ section_id: blog
 ---
 
 
-<div class='blog-post-container'>
-  <div class='blog-post-header-image'>
-    <img alt="" src="{{ site.url }}/{{ page.image }}" />
-  </div>
+<div class='blog-post'>
+  <img class='blog-post-image' alt='{{ post.title }}' src='{{ site.url }}/{{ page.image }}' />
   <div class='blog-post-content'>
     <p class='blog-post-info'>
       <span>{{ page.date | date: "%B %d, %Y" }}</span>

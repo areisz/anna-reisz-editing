@@ -4,51 +4,43 @@ title: Contact
 section_id: contact
 ---
 
-<div class='full parallax' style='background-image: url(images/@stock/contact-header-bg.jpg); color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Contact Us" tagline="Drop by or send an email to us" color="#fff" class="big" %}
-    </div>
-  </div>
-  <div class='four spacing'></div>
-</div>
+{% include section-header.html title="Contact Me" image="hero-image.jpg" %}
 
-  <div class='full'>
-    <div class='row'>
-      <div class='medium-8 columns'>
-        <div class='form'>
-          <div class='row'>
-            <form id='contact_form' method='POST'>
-              <div class='large-12 columns'>
-                <p id='thanks' style='display: none;'>
-                  Thanks for contacting us, we'll be in touch soon!
-                </p>
-              </div>
-              <div class='medium-12 columns'>
-                <input class='required' name='name' placeholder='NAME' type='text'>
-                <input class='required email' name='email' placeholder='EMAIL' type='text'>
-                <input class='required' name='subject' placeholder='SUBJECT' type='text'>
-                <textarea class='required' name='message' placeholder='MESSAGE'></textarea>
-                <input class='button white' type='submit'>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class='two spacing'></div>
+<div class='main-content'>
+  <div class='contact-form-container'>
+    <form method='POST' action='#'>
+      <div class='thanks-container' style='display: none;'>
+        <p>
+          Thanks for contacting me, I'll be in touch soon!
+        </p>
       </div>
-      <div class='medium-4 columns'>
-        <div class='contact-details'>
-          <h4>Our location:</h4>
-          <p>41 Dean Street, London, UK</p>
-          <h4>Our Phone:</h4>
-          <p>+86 (03) 9810 4612</p>
-          <h4>Fax:</h4>
-          <p>+6102 236338 5456</p>
-          <h4>Our Email:</h4>
-          <p>{{ site.email }}</p>
+      <div class='form-elements-container'>
+        <input name='name' placeholder='NAME' required type='text' autofocus>
+        <input name='email' placeholder='EMAIL' required type='text'>
+        <input name='subject' placeholder='SUBJECT' required type='text'>
+        <textarea name='message' placeholder='MESSAGE' required></textarea>
+        <div class='button-container'>
+          <button class='button' type='submit'>Submit</button>
         </div>
       </div>
-    </div>
+    </form>
   </div>
-  <div class='four spacing'></div>
+  <div class='contact-details'>
+    <a href='mailto:{{ site.email }}' class='social-media-contact-card'>
+      <i class='contact-card-icon far fa-envelope'></i>
+      <span class='contact-card-label'>Email</span>
+    </a>
+    <a href='https://www.facebook.com' target='_blank' class='social-media-contact-card'>
+      <i class='contact-card-icon fab fa-facebook'></i>
+      <span class='contact-card-label'>Facebook</span>
+    </a>
+    <a href='https://www.twitter.com' target='_blank' class='social-media-contact-card'>
+      <i class='contact-card-icon fab fa-twitter'></i>
+      <span class='contact-card-label'>Twitter</span>
+    </a>
+    <a href='https://www.instagram.com' target='_blank' class='social-media-contact-card'>
+      <i class='contact-card-icon fab fa-instagram'></i>
+      <span class='contact-card-label'>Instagram</span>
+    </a>
+  </div>
 </div>

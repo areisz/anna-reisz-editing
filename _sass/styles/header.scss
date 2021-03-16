@@ -3,6 +3,11 @@ header.nav-header {
     width: 100vw;
     height: 7rem;
     box-shadow: 0 4px 15px 0 rgba($charcoal, .1);
+    position: sticky;
+    top: 0;
+    background: $white;
+    z-index: 999;
+    transition: .25s all ease-in-out;
 
     nav {
         display: flex;
@@ -49,5 +54,10 @@ header.nav-header {
                 }
             }
         }
+    }
+
+    &.minimized {
+        height: 5rem;
+        transition: .25s all ease-in-out;
     }
 }

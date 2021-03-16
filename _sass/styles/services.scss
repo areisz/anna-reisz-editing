@@ -1,0 +1,27 @@
+.service {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 50%;
+    padding: 1rem;
+
+    .service-icon-container {
+        display: flex;
+        flex: 0 0 auto;
+        width: 7rem;
+        justify-content: center;
+        align-items: center;
+
+        i.fa {
+            font-size: 3rem;
+            color: $dark-green;
+        }
+    }
+
+    .service-description-container {
+        flex: 1 1 auto;
+
+        .service-title {
+            margin: .25rem 0;
+        }
+    }
+}

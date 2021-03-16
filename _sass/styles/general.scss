@@ -7,7 +7,7 @@ body {
     flex-flow: column nowrap;
     width: 100vw;
     min-height: 100vh;
-    background-color: $white;
+    background-color: $light-grey;
     overflow-x: hidden;
 }
 
@@ -16,14 +16,105 @@ body {
 }
 
 .main-content {
+    display: flex;
     width: 100%;
     max-width: $max-width;
-    margin: 1rem auto;
+    margin: 3rem auto;
+
+    &.row {
+        flex-flow: row wrap;
+    }
+
+    .flex-grow {
+        flex: 1 1 auto;
+    }
+
+    .flex-none {
+        flex: 0 0 auto;
+    }
+
+    .flex-half {
+        flex: 1 1 50%;
+    }
+
+    .flex-third {
+        flex: 1 1 33.33%;
+    }
+
+    .flex-fourth {
+        flex: 1 1 25%;
+    }
 }
 
 p {
     line-height: 1.6em;
 }
 
+a {
+    text-decoration: none;
+}
 
+/* Form Elements */
 
+input, 
+textarea {
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: 1px solid $light-grey;
+    height: 2.5rem;
+
+    &:focus,
+    &:active {
+        outline: 2px solid $light-green;
+    }
+}
+
+textarea {
+    height: 9rem;
+}
+
+.button-container {
+    text-align: right;
+}
+
+button {
+    display: inline-block;
+    background-color: $dark-green;
+    color: $white;
+    padding: .5rem 1rem;
+    font-size: 1.25em;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: 2px solid $white;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: lighten($dark-green, 20%);
+    }
+}
+
+.callout-container {
+    text-align: center;
+    padding: 0 2rem;
+    
+    .callout-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6rem;
+        width: 6rem;
+        border: 3px solid $dark-green;
+        border-radius: 50%;
+        margin: 0 auto;
+    
+        i {
+            font-size: 3rem;
+            color: $dark-green;
+        }
+    }
+}
